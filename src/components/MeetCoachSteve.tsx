@@ -36,7 +36,7 @@ export const MeetCoachSteve: React.FC<MeetCoachSteveProps> = ({ onOpenConsultati
               <img
                 src="/assets/steve-portrait.jpg"
                 alt="Steven Mekaru, M.D., NBC-HWC"
-                className="w-full h-auto object-cover aspect-[4/4]"
+                className="w-full h-auto object-cover object-top aspect-[4/5] sm:aspect-[4/5]"
                 referrerPolicy="no-referrer"
               />
               <div className="p-4 bg-white border-t border-[#15380e]/10 flex items-center justify-between">

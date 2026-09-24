@@ -104,7 +104,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation, onLearnMore }) =
                 <img
                   src="/assets/steve-portrait.jpg"
                   alt="Steven Mekaru, M.D., NBC-HWC - Coach Steve"
-                  className="w-full h-auto object-cover aspect-[4/4] sm:aspect-[4/4] transform hover:scale-[1.02] transition-transform duration-500"
+                  className="w-full h-auto object-cover object-top aspect-[4/5] sm:aspect-[4/5] transform hover:scale-[1.02] transition-transform duration-500"
                   referrerPolicy="no-referrer"
                 />
 
