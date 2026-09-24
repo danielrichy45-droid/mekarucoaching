@@ -1,0 +1,6 @@
+{
+  "name": "Mekaru Coaching | Board-Certified Health & Wellness Coaching",
+  "description": "Evidence-informed health & wellness coaching by Steven Mekaru, M.D., NBC-HWC. Sustainable lifestyle behavior change grounded in the six pillars of lifestyle medicine.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
