@@ -114,9 +114,14 @@ export const AiAssistantModal: React.FC<AiAssistantModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/60 backdrop-blur-xs animate-in fade-in duration-200">
+    <div
+      onClick={(e) => {
+        if (e.target === e.currentTarget) onClose();
+      }}
+      className="fixed inset-0 z-50 flex items-center sm:items-end justify-center sm:justify-start p-3 sm:p-6 bg-black/50 backdrop-blur-xs animate-in fade-in duration-200"
+    >
       <div
-        className="bg-white rounded-3xl max-w-xl w-full h-[85vh] max-h-[700px] flex flex-col border border-[#15380e]/20 shadow-2xl relative overflow-hidden"
+        className="bg-white rounded-3xl max-w-lg w-full h-[85vh] max-h-[640px] flex flex-col border border-[#15380e]/20 shadow-2xl relative overflow-hidden animate-in zoom-in-95 sm:slide-in-from-bottom-6 duration-200"
         role="dialog"
         aria-modal="true"
       >

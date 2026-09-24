@@ -19,22 +19,7 @@ export const FloatingAssistantTrigger: React.FC<FloatingAssistantTriggerProps> =
   if (isOpen) return null;
 
   return (
-    <div className="fixed bottom-6 right-6 z-40 flex items-center gap-3">
-      {/* Speech bubble badge */}
-      {showTooltip && (
-        <div className="hidden sm:flex items-center gap-2 bg-white px-3.5 py-2 rounded-2xl shadow-lg border border-[#15380e]/15 text-xs text-[#1c1c1c] animate-in slide-in-from-right duration-300">
-          <Sparkles className="w-3.5 h-3.5 text-[#e5a629]" />
-          <span>Have questions about health coaching?</span>
-          <button
-            onClick={() => setShowTooltip(false)}
-            className="text-stone-400 hover:text-stone-600 ml-1 p-0.5"
-            aria-label="Dismiss message"
-          >
-            <X className="w-3 h-3" />
-          </button>
-        </div>
-      )}
-
+    <div className="fixed bottom-6 left-6 z-40 flex items-center gap-3">
       {/* Main Floating Button */}
       <button
         onClick={onOpen}
@@ -50,6 +35,21 @@ export const FloatingAssistantTrigger: React.FC<FloatingAssistantTriggerProps> =
           Ask Assistant
         </span>
       </button>
+
+      {/* Speech bubble badge */}
+      {showTooltip && (
+        <div className="hidden sm:flex items-center gap-2 bg-white px-3.5 py-2 rounded-2xl shadow-lg border border-[#15380e]/15 text-xs text-[#1c1c1c] animate-in slide-in-from-left duration-300">
+          <Sparkles className="w-3.5 h-3.5 text-[#e5a629]" />
+          <span>Have questions? I can help you!</span>
+          <button
+            onClick={() => setShowTooltip(false)}
+            className="text-stone-400 hover:text-stone-600 ml-1 p-0.5"
+            aria-label="Dismiss message"
+          >
+            <X className="w-3 h-3" />
+          </button>
+        </div>
+      )}
     </div>
   );
 };
